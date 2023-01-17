@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  decimal.addEventListener("click", function (e) {
+    insertDecimal(currentValue.textContent);
+  });
+
   equals.addEventListener("click", function (e) {
     displaySolution(currentValue.textContent);
   });
@@ -44,20 +48,30 @@ document.addEventListener("DOMContentLoaded", function () {
     currentValue.textContent = "";
   }
 
+  function insertDecimal() {
+    if (currentValue.textContent === "") {
+      currentValue.textContent += ".";
+    } else if (currentValue.textContent.includes(".")) {
+      currentValue.textContent;
+    } else currentValue.textContent += ".";
+  }
+
   function displaySolution() {
     if (previousValue != "" && currentValue != "") {
       findSolution();
     }
 
-    solution = findSolution();
-    currentValue.textContent = sol.toString();
-    previousValue.textContent = "";
+    solution = sol.toString();
+    if (solution.length > 10) {
+      currentValue.textContent = solution.substring(0, 10) + "...";
+      previousValue.textContent = "";
+    } else currentValue.textContent = solution;
   }
 
   function findSolution() {
-    prevNum = parseInt(previousValue.textContent.slice(0, -1));
+    prevNum = parseFloat(previousValue.textContent.slice(0, -1));
     oper = previousValue.textContent.slice(-1);
-    currNum = parseInt(currentValue.textContent);
+    currNum = parseFloat(currentValue.textContent);
 
     if (oper === "+") {
       sol = prevNum + currNum;

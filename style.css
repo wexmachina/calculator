@@ -1,0 +1,219 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 54vh;
+    height: 84vh;
+    align-items: center;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: .5vh;
+    background-color: lightgray;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 48vh;
+    height: 12vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 6vh;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: .5vh;
+    border-color: darkgreen;
+    background-color: lightgreen;
+    margin: .5vh;
+}
+
+.previous {
+    font-size: 4vh;
+    font-family: sans-serif;
+    font-color: darkgreen;
+}
+
+.current {
+    font-size: 6vh;
+    font-family: sans-serif;
+    font-color: darkgreen;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.calc-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.number {
+    display: flex;
+    height: 12vh;
+    width: 12vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: .5vh;
+    border-color: darkblue;
+    background-color: lightblue;
+    margin: .5vh;
+}
+
+.number:active {
+    background-color: white;
+    height: 11.5vh;
+    width: 11.5vh;
+    margin: .75vh;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    margin: .5vh;
+}
+
+.operator {
+    display: flex;
+    height: 12vh;
+    width: 12vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: .5vh;
+    border-color: darkred;
+    background-color: lightcoral;
+    margin: .5vh;
+
+}
+
+.operator:active {
+    background-color: white;
+    height: 11.5vh;
+    width: 11.5vh;
+    margin: .75vh;
+}
+
+.deceqclr {
+    display: flex;
+    flex-direction: row;
+    margin: .5vh;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+
+.decimal {
+    display: flex;
+    height: 11vh;
+    width: 11vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
+    margin: .5vh;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: .5vh;
+    border-color: goldenrod;
+    background-color: lightgoldenrodyellow;
+}
+
+.decimal:active {
+    background-color: white;
+    height: 10.5vh;
+    width: 10.5vh;
+    margin: .75vh;
+}
+
+.equals {
+    display: flex;
+    height: 12vh;
+    width: 12vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
+    margin: .5vh;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: .5vh;
+    border-color: goldenrod;
+    background-color: lightgoldenrodyellow;
+    margin: .5vh;
+
+}
+
+.equals:active {
+    background-color: white;
+    height: 11.5vh;
+    width: 11.5vh;
+    margin: .75vh;
+}
+
+.clear {
+    display: flex;
+    height: 12vh;
+    width: 12vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
+    margin: .5vh;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: .5vh;
+    border-color: goldenrod;
+    background-color: lightgoldenrodyellow;
+    margin: .5vh;
+}
+
+.clear:active {
+    background-color: white;
+    height: 11.5vh;
+    width: 11.5vh;
+    margin: .75vh;
+}
+
+.allclear {
+    display: flex;
+    height: 12vh;
+    width: 12vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
+    margin: .5vh;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: .5vh;
+    border-color: goldenrod;
+    background-color: lightgoldenrodyellow;
+    margin: .5vh;
+}
+
+.allclear:active {
+    background-color: white;
+    height: 11.5vh;
+    width: 11.5vh;
+    margin: .75vh;
+}
